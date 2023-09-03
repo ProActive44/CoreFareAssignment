@@ -6,15 +6,11 @@
 
 .content{
   height: 80vh;
+  padding: 50px;
 }
 
-.nav-link {
-  color: #000;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 0.25rem;
-} 
 
 .link{
-  border: 2px solid red ;
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
 }
