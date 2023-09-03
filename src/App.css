@@ -7,3 +7,14 @@
 .content{
   height: 80vh;
 }
+
+.nav-link {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.25rem;
+} 
+
+.link{
+  border: 2px solid red ;
+}

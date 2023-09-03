@@ -1,15 +1,17 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" className="px-10">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">About</Nav.Link>
-          <Nav.Link href="#">Services</Nav.Link>
+          <NavLink ><Link to='/'>Home</Link></NavLink>
+          <NavLink ><Link to="/about">About</Link></NavLink>
+          <NavLink ><Link to="/services">Services</Link></NavLink>
           <NavDropdown title="More" id="basic-nav-dropdown">
             <NavDropdown.Item href="https://proactive44.github.io/">My Portfolio</NavDropdown.Item>
             <NavDropdown.Item href="https://www.linkedin.com/in/prasad-mhaske-88a177247/">Contact</NavDropdown.Item>
